@@ -1,7 +1,22 @@
-<template >
-  <div style="padding:30px;">
-    <el-alert :closable="false" title="menu 1">
-      <router-view />
-    </el-alert>
+<template>
+  <div class="chart-container">
+    <chart height="100%" width="100%"/>
   </div>
 </template>
+
+<script>
+import Chart from '@/components/Charts/lineMarker'
+
+export default {
+  name: 'LineChart',
+  components: { Chart }
+}
+</script>
+
+<style scoped>
+.chart-container{ /*加上scoped 避免全局样式被污染*/
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 84px);
+}
+</style>
