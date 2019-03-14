@@ -97,8 +97,9 @@ export function getQueryObject(url) {
  */
 export function getByteLen(val) {
   let len = 0
+  const reg = /[^\x00-\xff]/gi
   for (let i = 0; i < val.length; i++) {
-    if (val[i].match(/[^\x00-\xff]/gi) != null) {
+    if (val[i].match(reg) != null) {
       len += 1
     } else {
       len += 0.5
