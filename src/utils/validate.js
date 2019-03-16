@@ -10,3 +10,9 @@ export function isvalidUsername(str) {
 export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
 }
+
+/* 小写字母*/
+export function validateNumber(str) {
+  const reg = /^(\d{12})$/
+  return reg.test(str)
+}

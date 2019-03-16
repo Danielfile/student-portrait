@@ -1,22 +1,25 @@
 <template>
   <div class="chart-container">
-    <chart height="100%" width="100%"/>
+     <chart width="90%" height="100%"/>
   </div>
 </template>
 
 <script>
-import Chart from '@/components/Charts/lineMarker'
+import Chart from '@/components/Charts/mixChart'
 
 export default {
-  name: 'LineChart',
+  name: 'mixChart',
   components: { Chart }
 }
 </script>
 
 <style scoped>
 .chart-container{ /*加上scoped 避免全局样式被污染*/
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 84px);
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	top: 2.5%;
+	left: 2.5%;
+	
 }
 </style>
