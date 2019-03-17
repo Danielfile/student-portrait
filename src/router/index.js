@@ -29,38 +29,39 @@ export const constantRouterMap = [
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
-    name: '标题',
+    redirect: '/home',
+    name: '首 页',
     hidden: true,
     children: [{
-      path: 'dashboard',
-      component: () => import('@/views/dashboard/index')
+      path: 'home',
+      component: () => import('@/views/home/index'),
+      meta: { title: '首 页' }
     }]
   },
 
   {
-    path: '/nested',
+    path: '/consume',
     component: Layout,
-    name: 'Nested',
+    name: '消 费',
     meta: {
-      title: 'Nested',
-      icon: 'nested'
+      title: '消 费',
+      icon: 'consume'
     },
     children: [
       {
         path: 'menu1',
-        component: () => import('@/views/nested/menu1/index'), // Parent router-view
-        meta: { title: 'menu1' }
+        component: () => import('@/views/consume/menu1/index'), // Parent router-view
+        meta: { title: '食 堂' }
       },
       {
         path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        meta: { title: 'menu2' }
+        component: () => import('@/views/consume/menu2/index'),
+        meta: { title: '校 车' }
       },
       {
         path: 'menu3',
-        component: () => import('@/views/nested/menu3/index'),
-        meta: { title: 'menu3' }
+        component: () => import('@/views/consume/menu3/index'),
+        meta: { title: '其 它' }
       }
     ]
   },

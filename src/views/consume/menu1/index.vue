@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import Chart from '@/components/Charts/mixChart'
+import Chart from '@/components/Charts/canteen'
 
 export default {
-  name: 'mixChart',
+  name: 'Canteen',
   components: { Chart }
 }
 </script>
@@ -20,6 +20,5 @@ export default {
 	width: 90%;
 	top: 2.5%;
 	left: 2.5%;
-	
 }
 </style>
