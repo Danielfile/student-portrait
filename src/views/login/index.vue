@@ -24,7 +24,7 @@
         </span>
       </el-form-item>
       <el-form-item>
-        <el-button :loading="loading" type="info" plain="boolean" style="width:100%;" @click.native.prevent="handleLogin">
+        <el-button :loading="loading" type="info" style="width:100%;" @click.native.prevent="handleLogin">
           <span style="font-size:1.5em;">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</span>
         </el-button>
       </el-form-item>
@@ -92,13 +92,11 @@ export default {
           this.loading = true
           this.$store.dispatch('Login', this.loginForm).then(() => {
             this.loading = false
-            console.log(this.redirect)
             this.$router.push({ path: this.redirect || '/' })
           }).catch(() => {
             this.loading = false
           })
         } else {
-          console.log('error submit!!')
           return false
         }
       })

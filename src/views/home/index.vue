@@ -12,8 +12,8 @@
       <el-row>
         <el-col :span="10">
           <el-form-item label-width="85px" label="发布时间 :" class="postInfo-container-item">
-            <el-date-picker v-model="postForm.start_time" type="datetime" format="yyyy-MM-dd" placeholder="选择日期时间"/>至
-            <el-date-picker v-model="postForm.end_time" type="datetime" format="yyyy-MM-dd" placeholder="选择日期时间"/>
+            <el-date-picker v-model="postForm.start_time" type="datetime" format="yyyy-MM-dd hh:mm:ss" placeholder="选择日期时间"/>至
+            <el-date-picker v-model="postForm.end_time" type="datetime" format="yyyy-MM-dd hh:mm:ss" placeholder="选择日期时间"/>
           </el-form-item>
         </el-col>
       </el-row>
