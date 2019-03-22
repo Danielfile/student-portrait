@@ -40,6 +40,33 @@ export const constantRouterMap = [
   },
 
   {
+    path: '/gate',
+    component: Layout,
+    name: '门 禁',
+    meta: {
+      title: '门 禁',
+      icon: 'gate'
+    },
+    children: [
+      {
+        path: 'menu1',
+        component: () => import('@/views/gate/menu1/index'), // Parent router-view
+        meta: { title: '校 卫 处' }
+      },
+      {
+        path: 'menu2',
+        component: () => import('@/views/gate/menu2/index'),
+        meta: { title: '宿 管 楼' }
+      },
+      {
+        path: 'menu3',
+        component: () => import('@/views/gate/menu3/index'),
+        meta: { title: '图 书 馆' }
+      }
+    ]
+  },
+
+  {
     path: '/consume',
     component: Layout,
     name: '消 费',

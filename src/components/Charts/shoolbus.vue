@@ -5,6 +5,7 @@
 <script>
 import echarts from 'echarts'
 import resize from './mixins/resize'
+import { timestampToTime } from '@/utils/myDate'
 
 var graphData = [
   [
@@ -103,11 +104,27 @@ var option = {
       fontSize: '16'
     }
   },
+  tooltip: {
+    formatter: function (obj) {
+      if(obj.seriesType=="graph"){
+        if(obj.name==""){
+          var str = timestampToTime(obj.data[0])+'<br/>';
+          str += '次数： '+obj.data[1];
+          return str;
+        }
+      }else{
+        return '平均次数:  '+obj.data[1];
+      }
+    },
+    tooltip: {
+      show: true
+    }
+  },
   toolbox: {  
     show: true,  
     itemSize: 20,
     itemGap: 30,
-    right: 10,
+    right: 20,
     orient: 'vertical',
     color: ['#1e90ff','#22bb22','#4b0082','#d2691e'],
     feature: {

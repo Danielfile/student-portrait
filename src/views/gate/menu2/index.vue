@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Chart from '@/components/Charts/c_others'
+import Chart from '@/components/Charts/shoolbus'
 
 export default {
   name: 'Canteen',

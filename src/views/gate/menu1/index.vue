@@ -1,11 +1,11 @@
 <template>
   <div class="chart-container">
-     <chart width="100%" height="100%"/>
+     <chart width="90%" height="100%"/>
   </div>
 </template>
 
 <script>
-import Chart from '@/components/Charts/c_others'
+import Chart from '@/components/Charts/shoolgate'
 
 export default {
   name: 'Canteen',
@@ -19,6 +19,6 @@ export default {
 	height: 90%;
 	width: 90%;
 	top: 2.5%;
-	left: 5%;
+	left: 2.5%;
 }
 </style>
