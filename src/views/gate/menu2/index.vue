@@ -8,7 +8,7 @@
 import Chart from '@/components/Charts/dormitory'
 
 export default {
-  name: 'Canteen',
+  name: 'Dormitory',
   components: { Chart }
 }
 </script>

@@ -8,7 +8,7 @@
 import Chart from '@/components/Charts/shoolbus'
 
 export default {
-  name: 'Canteen',
+  name: 'Shoolbus',
   components: { Chart }
 }
 </script>
