@@ -93,6 +93,33 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/study',
+    component: Layout,
+    name: '学 习',
+    meta: {
+      title: '学 习',
+      icon: 'study'
+    },
+    children: [
+      {
+        path: 'menu1',
+        component: () => import('@/views/study/menu1/index'), // Parent router-view
+        meta: { title: '课 程' }
+      },
+      {
+        path: 'menu2',
+        component: () => import('@/views/study/menu2/index'),
+        meta: { title: '书 籍' }
+      },
+      {
+        path: 'menu3',
+        component: () => import('@/views/study/menu3/index'),
+        meta: { title: '竞 赛' }
+      }
+    ]
+  },
+
   { path: '*', redirect: '/404', hidden: true }
 ]
 
