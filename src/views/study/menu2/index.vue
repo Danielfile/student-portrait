@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import Chart from '@/components/Charts/shoolbus'
+import Chart from '@/components/Charts/books'
 
 export default {
-  name: 'Shoolbus',
+  name: 'Books',
   components: { Chart }
 }
 </script>
