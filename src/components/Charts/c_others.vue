@@ -49,7 +49,7 @@ function getPieSeries(scatterData, chart) {
 var scatterData = getVirtulData();
 
 var option = {
-  backgroundColor: '#EEE',
+  backgroundColor: '#D7EBFF',
   tooltip : {
     formatter: '{b}消费占比：{d}%',
     tooltip: {

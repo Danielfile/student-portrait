@@ -171,6 +171,7 @@ var data = [];
 convert(rawData, data, '');
 
 var option = {
+  backgroundColor: '#D7EBFF',
   title: {
     text: '图书借阅情况',
     subtext: '150105070028',

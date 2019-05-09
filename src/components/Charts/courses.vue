@@ -170,6 +170,7 @@ function renderItem(params, api) {
 }
 
 var option = {
+  backgroundColor: '#D7EBFF',
   xAxis: {
     axisLine: {show: false},
     axisTick: {show: false},

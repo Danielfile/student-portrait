@@ -14,13 +14,13 @@ const xData = (function() {
   return data
 }())
 var option = {
-  backgroundColor: '#304156',
+  backgroundColor: '#D7EBFF',
   title: {
     text: '食 堂',
     x: '20',
     top: '20',
     textStyle: {
-      color: '#fff',
+      color: '#314561',
       fontSize: '22'
     },
     subtextStyle: {
@@ -34,7 +34,6 @@ var option = {
     itemGap: 30,
     right: 10,
     color: ['#1e90ff','#22bb22','#4b0082','#d2691e'],
-    backgroundColor: 'rgba(31,45,61,0.3)',
     feature: {  
       dataView: {show:true},  
       saveAsImage: {  
@@ -261,7 +260,7 @@ var option = {
     symbol: 'circle',
     itemStyle: {
       normal: {
-        color: 'rgba(252,230,48,1)',
+        color: '#314561',
         barBorderRadius: 0,
         label: {
           show: true,

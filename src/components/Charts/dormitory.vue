@@ -135,36 +135,42 @@ var option = {
   },
   options: [
     {
+      backgroundColor: '#D7EBFF',
       title: {text: '星期天'},
       series: [
         {data: dataGate[8]}
       ]
     },
     {
+      backgroundColor: '#D7EBFF',
       title : {text: '星期天'},
       series : [
         {data: dataGate[10]}
       ]
     },
     {
+      backgroundColor: '#D7EBFF',
       title: {text: '星期天'},
       series: [
         {data: dataGate[11]}
       ]
     },
     {
+      backgroundColor: '#D7EBFF',
       title : {text: '星期天'},
       series : [
         {data: dataGate[15]}
       ]
     },
     {
+      backgroundColor: '#D7EBFF',
       title: {text: '星期天'},
       series: [
         {data: dataGate[15]}
       ]
     },
     {
+      backgroundColor: '#D7EBFF',
       title : {text: '星期天'},
       series : [
         {data: dataGate[18]}

@@ -18,7 +18,7 @@ var data = [
 ];  //data[0]、data[1]默认？不知如何修改。
 
 var option = {
-  backgroundColor: '#cafbfe',
+  backgroundColor: '#D7EBFF',
   xAxis: {
     show: false,
     type: 'value',

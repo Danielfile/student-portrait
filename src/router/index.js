@@ -120,6 +120,23 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/sport',
+    component: Layout,
+    name: '运 动',
+    meta: {
+      title: '运 动',
+      icon: 'sport'
+    },
+    children: [
+      {
+        path: 'menu1',
+        component: () => import('@/views/sport/menu1/index'), // Parent router-view
+        meta: { title: '路 线' }
+      }
+    ]
+  },
+
   { path: '*', redirect: '/404', hidden: true }
 ]
 

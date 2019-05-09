@@ -11,6 +11,7 @@ import $ from 'jquery'
 var d;
 var flag = false; //记录是否打印了图片网址
 var option = {
+  backgroundColor: '#D7EBFF',
   title: {
     left: '50%',
     textAlign: 'center'

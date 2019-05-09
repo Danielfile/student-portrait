@@ -107,7 +107,7 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss">
 $bg:#2d3a4b;
-$light_gray:#eee;
+$light_gray:#314561;
 
 /* reset element-ui css */
 .login-container {
@@ -140,9 +140,9 @@ $light_gray:#eee;
 </style>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-$bg:#304156;
-$dark_gray:#889aa4;
-$light_gray:#eee;
+$bg:#D7EBFF;
+$dark_gray:#f9cf67;
+$light_gray:#314561;
 .login-container {
   position: fixed;
   height: 100%;
@@ -159,7 +159,7 @@ $light_gray:#eee;
   }
   .tips {
     font-size: 14px;
-    color: #fff;
+    color: #314561;
     margin-bottom: 10px;
     span {
       &:first-of-type {
