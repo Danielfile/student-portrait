@@ -69,7 +69,7 @@ var option = {
       }
     }
   },
-  color:['#53868B', '#7AC5CD','#BBFFFF'],
+  color:['#5F868B', '#78C5CD','#A0E0E0'],
   legend: {
     data: ['超市', '浴室', '其它'],
     bottom: 20
@@ -90,7 +90,7 @@ var option = {
       firstDay: 1,
       textStyle: {
         fontSize: 20,
-        color: '#999'
+        color: '#314561'
       },
       nameMap: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
     },
@@ -99,7 +99,7 @@ var option = {
       margin: 30,
       textStyle: {
         fontSize: 25,
-        color: '#999'
+        color: '#314561'
       }
     },
     range: ['2019-03']
@@ -117,7 +117,7 @@ var option = {
         },
         offset: [-cellSize[0] / 2 + 10, -cellSize[1] / 2 + 10],
         textStyle: {
-          color: '#666',
+          color: '#314561',
           fontSize: 16
         }
       }

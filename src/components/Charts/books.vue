@@ -205,8 +205,8 @@ var option = {
         itemStyle: {
           normal: {
             borderColor: '#555',
-            borderWidth: 4,
-            gapWidth: 4
+            borderWidth: 2,
+            gapWidth: 2
           }
         }
       },

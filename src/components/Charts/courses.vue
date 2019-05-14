@@ -163,7 +163,7 @@ function renderItem(params, api) {
       text: nodeName,
       textPosition: 'inside',
       textFont: textFont,
-      stroke: 'rgba(0,0,0,0.5)',
+      stroke: 'rgba(33,33,33,0.5)',
       lineWidth: 3
     })
   };
@@ -207,7 +207,7 @@ var option = {
     pieces: pieces,
     dimension: 1,
     inRange: {
-      color: ['#6e6e6e', '#808080', '#aeaeae', '#98FB98', '#33ff33', '#ff0000',]
+      color: ['#B7EBFF', '#97EBFF', '#7ED7F2', '#A9FBA9', '#55FF55', '#FF2222',]
     }
   },
   series: {
